@@ -13,7 +13,7 @@ class Opportunity(models.Model):
         return self.name
     
 
-class Volunteering(models.Model):
+class Volunteer(models.Model):
     parent = models.ForeignKey('club.Parent', on_delete=models.CASCADE)
     opportunity = models.ForeignKey(Opportunity, on_delete=models.CASCADE)
     application_date = models.DateField()
