@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-k!)efxa(02w!291qdx@+$ucsu9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.rowswimming.ca', 'htmfilho.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.rowswimming.ca', '.pythonanywhere.com']
 
 # Application definition
 

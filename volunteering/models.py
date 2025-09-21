@@ -25,4 +25,4 @@ class Volunteer(models.Model):
     points_earned = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
-        return self.parent
+        return self.parent.user.first_name + ' ' + self.parent.user.last_name
