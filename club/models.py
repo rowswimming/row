@@ -6,5 +6,14 @@ class Parent(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.user.first_name + ' ' + self.user.last_name
-    
+        print(self.user.last_name)
+
+        name = ''
+        if self.user.first_name:
+            name = name + self.user.first_name
+        if self.user.last_name:
+            name = name + ' ' + self.user.last_name
+        if not name:
+            name = self.user.username
+
+        return name
